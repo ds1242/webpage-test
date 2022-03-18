@@ -64,7 +64,8 @@ async function example() {
   // let createButton = await driver.findElement(By.id('create-blog'));
   // createButton.click();
   
-
+  let postCount = (await driver.findElements(By.className('post'))).length;
+  console.log('post count is ' + postCount);
 
 
   
