@@ -4,7 +4,7 @@
   "description": "Web Testing",
   "main": "firstScript.js",
   "scripts": {
-    "test": "jest"
+    "test": "mocha --no-timeouts --parallel"
   },
   "author": "David Shaw",
   "license": "ISC",
