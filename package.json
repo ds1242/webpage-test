@@ -1,7 +1,7 @@
 {
-  "name": "acato-testing",
+  "name": "trailforks-testing",
   "version": "1.0.0",
-  "description": "Web Testing",
+  "description": "Web Testing with selenium scripts to practice",
   "main": "firstScript.js",
   "scripts": {
     "test": "mocha --no-timeouts --parallel"
