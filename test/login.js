@@ -17,7 +17,7 @@ describe('Login into trailforks as a user', function() {
     
     // Log into trailforks
     
-    // click side bar
+    // click login button
     let login =  await driver.wait(until.elementLocated(By.id('login')));
     login.click();
     
