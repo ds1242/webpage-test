@@ -11,7 +11,7 @@ let driver = new Builder().forBrowser('chrome').build();
 describe('Login into trailforks as a user', function() {
 
   it("successfully log into trailforks as a user", async function() {
-    // this.timeout(10000);
+
     // Navigate to Url
     await driver.get('https://www.trailforks.com/');
     
