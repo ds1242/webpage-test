@@ -22,13 +22,20 @@ describe('Search for a trail', function() {
         // assert using node assertion
         assert.equal(searchPageUrl, 'https://www.trailforks.com/search/?search=Bobsled');
 
-        await driver.quit();
     });
 
     it('Pull up trail details and information page', async function() {
-        await driver.get('https://www.trailforks.com/search/?search=Bobsled');
 
+        // find the 
         let searchResult = await driver.wait(until.elementLocated(By.linkText('Bobsled')));
-        console.log(searchResult.length);
+        searchResult.click();
+
+        // check for trail title to ensure the result is correct
+        let trailTitle = await driver.wait(until.elementLocated(By.id('trailtitle'))).getText();
+        
+        // assert using node assertion
+        assert.equal(trailTitle, 'Bobsled');
+
+        await driver.quit();
     })
 })
